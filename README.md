@@ -101,3 +101,20 @@ appointment-size=5
 appointment-doctor-size=5
 appointment-patient-size=5
 ```
+## 🌐 Conexión con el Frontend
+
+El **frontend** de esta aplicación funcionará correctamente **solo si el backend está corriendo en el puerto `8080`**.
+
+Para asegurar una buena comunicación entre el frontend y el backend (evitando errores por **CORS**), debes configurar correctamente los orígenes permitidos en la clase `SecurityConfig.java`, dentro del método `corsConfigurationSource`.
+
+### ⚠️ Importante
+
+Si usas Live Server (VS Code) o el servidor integrado de WebStorm, **agrega la ruta del frontend como origen permitido**, por ejemplo:
+
+```java
+configuration.setAllowedOrigins(
+    List.of(
+        "http://localhost:5500",     // Live Server (VS Code)
+        "http://localhost:5173"      // WebStorm/Vite o similar
+    )
+);
