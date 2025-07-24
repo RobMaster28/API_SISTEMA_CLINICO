@@ -44,7 +44,7 @@ Este proyecto es una API desarrollada para la gestión integral de una clínica.
 Proyecto en desarrollo. Actualmente se trabaja en:
 - Integración completa con la base de datos
 - Mejoras en seguridad con Spring Security
-- Optimización de las interfaces gráficas y endpoints REST
+- Optimización de endpoints REST
 
 ## 🔧 Configuración del entorno
 
